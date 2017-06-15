@@ -15,18 +15,17 @@ $(document).ready(function() {
       // var capLists = lists.map(function(list) {
       //   return list.toUpperCase();
       // });
-      console.log(sortedList);
 
-      $("." + list).text(userInput);
       });
-// sortedList.sort();
-var capLists = lists.map(function(list) {
-  return list.toUpperCase();
-});
 
-
-      $("#output").show();
-
-
-});
+      sortedList.sort();
+    // var capLists = lists.map(function(list) {
+    //   return list.toUpperCase();
+    // });
+     sortedList.forEach(function(item){
+       $(".item1").append("<li>"+item+"</li>");
+     });
+      console.log(sortedList);
+  $("#output").show();
+  });
 });
